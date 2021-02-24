@@ -3,33 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GuessNumber</title>
+    <title>StarDevs</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <a href="#"><h1>GuessNumber</h1></a>
+      <h1>StarDevs</h1>
     </header>
-    <main class="container">
-      <form action="">
-        <label for="kick">Digite um número (0 - 10)</label>
-        <input type="number" id="kick" max="10" placeholder="0" />
-        <button type="submit">Jogar!</button>
-      </form>
-      <section class="result-box" id="result">
-        <h2 id="status">Adivinhe o número sorteado</h2>
-        <span id="attempt">Tentativas: 0</span>
+    <main>
+      <section class="cards-main">
+        <div class="card-container">
+          <div class="card-main">
+            <span>Personagens</span>
+            <h2 id="persons">Carregando...</h2>
+          </div>
+          <img
+            width="50"
+            height="50"
+            src="./img/darth.png"
+            alt="imagem personagens"
+          />
+        </div>
+        <div class="card-container">
+          <div class="card-main">
+            <span>Naves Estelares</span>
+            <h2 id="starships">Carregando...</h2>
+          </div>
+          <img
+            width="50"
+            height="50"
+            src="./img/starship.png"
+            alt="imagem naves estelares"
+          />
+        </div>
+        <div class="card-container">
+          <div class="card-main">
+            <span>Planetas</span>
+            <h2 id="planets">Carregando...</h2>
+          </div>
+          <img
+            width="50"
+            height="50"
+            src="./img/planet.png"
+            alt="imagem planetas"
+          />
+        </div>
       </section>
-      <button id="btnRestart">Jogar de Novo</button>
+
+      <section class="phrases-container">
+        <button id="btn-phrases">Ler uma frase!</button>
+        <p id="phrase"></p>
+      </section>
     </main>
-    <footer>
-      <p>GuessNumber, 2021 &copy;</p>
-    </footer>
   </body>
 </html>
