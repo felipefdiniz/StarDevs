@@ -104,4 +104,7 @@ main .phrases-container p {
   margin-top: 5%;
   font-size: 1.7em;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
