@@ -97,14 +97,19 @@ main .phrases-container button {
 main .phrases-container button:hover {
   background-color: var(--white);
   color: var(--yellow);
-  border-radius: 1.5em;
+  border-radius: 2em;
 }
 
 main .phrases-container p {
-  margin-top: 5%;
-  font-size: 1.7em;
+  text-align: center;
+  width: 75%;
+  font-size: 2em;
   font-weight: 700;
-  display: flex;
-  align-items: center;
-  align-content: center;
+  margin-top: 4%;
+
+  transition: 0.1s ease-in-out;
+}
+
+main .phrases-container p {
+  opacity: 0.7;
 }

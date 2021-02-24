@@ -33,7 +33,7 @@ function loadPhrase() {
     .then((data) => data.json())
     .then((json) => {
       btn.innerHTML = "Ver Mais uma Frase";
-      phrase.innerHTML = json.content;
+      phrase.innerHTML = `"${json.content}"`;
 
       phrase.animate(
         [{ transform: "translateY(-70px)" }, { transform: "translateY(0px)" }],
